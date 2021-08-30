@@ -1,0 +1,103 @@
+################ General parameters ################
+
+
+# Number of DNA beads
+N = 301
+
+# Number of base pairs per DNA bead
+n = 5
+
+# Safety-belt tethering site (DNA bead)
+tether = 38
+#tether = 60
+
+# DNA bead initially attached to SMC (lower binding site)
+attachment = 68
+#attachment = 90
+
+# Initial relative extension
+relExtension = 0.25
+
+# Thickness of repulsive surface (nm)
+surfaceThickness = 4.
+
+# Number of independent runs
+runs = 4
+
+# Number of SMC cycles
+cycles = 50
+
+# Average number of steps for ATP binding
+stepsATP = 2000000
+
+# Average number of steps for ATP hydrolysis
+stepsADP = 8000000
+
+# Average number of steps for returning to APO
+#stepsAPO = 50000
+stepsAPO = 2000000
+
+
+##################### Geometry #####################
+
+
+# Length of each coiled-coil arm (nm)
+armLength = 50.
+
+# Width of ATP bridge (nm)
+bridgeWidth = 7.5
+
+# Radius of lower circular-arc compartment (nm)
+HKradius = 7.
+
+# SMC-DNA hard-core repulsion radius (nm)
+intRadSMCvsDNA = 2.5 
+
+# Folding angles of lower compartment (degrees)
+foldingAngleAPO = 45.
+foldingAngleATP = 160.
+
+# Opening angle of arms in ATP-bound state (degrees)
+armsAngleATP = 130.
+
+
+#################### LJ energies ###################
+
+
+# 3 = Repulsion
+# 4 = Upper site
+# 5 = Middle site
+# 6 = Lower site
+
+# LJ energy (kT units)
+# DE for a cutoff of 3.0 nm: 0.11e
+# DE for a cutoff of 3.5 nm: 0.54e
+
+epsilon3 = 3.
+epsilon4 = 6.
+epsilon5 = 6.
+epsilon6 = 100.
+
+# LJ cutoff (nm)
+cutoff4 = 3.5
+cutoff5 = 3.5
+cutoff6 = 3.
+
+
+################# Bending energies #################
+
+
+# Bending stiffness of arm-bridge angle (kT units)
+armsStiffness = 100.
+
+# Bending stiffness of elbows (kT units)
+elbowsStiffness = 30.
+
+# Alignment stiffness of binding sites (kT units)
+siteStiffness = 100.
+
+# Folding stiffness of lower compartment (kT units)
+foldingStiffness = 60.
+
+# Folding asymmetry stiffness of lower compartment (kT units)
+asymmetryStiffness = 100.
